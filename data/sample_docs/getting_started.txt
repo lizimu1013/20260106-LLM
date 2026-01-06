@@ -1,0 +1,8 @@
+这是一个示例文档，用来演示如何构建本地的向量数据库。
+
+步骤：
+1. 准备好本地的 Qwen3 Embedding 和 Qwen3-32B 模型。
+2. 运行 `python -m src.cli build --docs-dir data/sample_docs` 将文档切分并写入 Chroma。
+3. 运行 `python -m src.cli ask --question \"如何使用这个项目？\"` 进行测试提问。
+
+你可以用自己的文本替换本文件，脚本会自动递归加载指定目录下的所有 `.txt` 文件。
